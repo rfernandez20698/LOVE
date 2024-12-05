@@ -1,0 +1,28 @@
+body{
+    background-color: antiquewhite;
+}
+
+img{
+    width: 25%;
+    margin-left: 20px;
+}
+
+button{
+    color: black;
+}
+
+input{
+    color: black;
+    background-color: aliceblue;
+    border: 0;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Arima', system-ui;
+    margin: 10px 0;
+}
+
+.container{
+    text-align: center;
+}
