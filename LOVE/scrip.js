@@ -10,7 +10,21 @@ xhr.addEventListener('readystatechange', function () {
 		document.getElementById("p").innerHTML = resultado.percentage + "%"
 		console.log(resultado.percentage);
 		if(parseInt(resultado.percentage) <50){
-			document.getElementById("foto")
+			document.getElementById("foto").src = './img/corazonroto.png'
+			document.getElementById ("f").innerHTML = "Mejor busca a otra persona..."
+		}
+
+		if(parseInt(resultado.percentage) >=50 && parseInt(resultado.percentage) <75){
+			document.getElementById("foto").src = './img/corazon.webp'
+			imagen.src = './img/corazon.webp'
+			document.getElementById("f").innerHTML = "¡Hay amor en el aire!"
+		}
+
+		if(parseInt(resultado.percentage) >=75){
+			document.getElementById("foto").src = './img/boda.webp'
+			imagen.src = './img/boda'
+			document.getElementById("f").innerHTML = "Tocará boda..."
+		}
 
 
 
@@ -24,7 +38,6 @@ xhr.addEventListener('readystatechange', function () {
 
 		const resultdiv = document.getElementById("app")
 
-		const contenido = `<p> La compatibilidad entre ${resultado.sname} y ${resultado.fname} es del ${resultado.percentage}%</p>`
 
 		resultdiv.innerHTML = contenido;
 	}

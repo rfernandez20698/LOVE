@@ -29,5 +29,15 @@ input{
     
 }
 
+#f{
+    font-family:  "Arima", serif;
+    font-weight: bolder;
+    align-items: center;
+}
 
+#p{
+    font-family:  "Arima", serif;
+    font-weight: bolder;
+    align-items: center;
 
+}
